@@ -1,0 +1,285 @@
+.blindboxWrapper {
+  margin: 40px auto;
+  padding: 10px;
+  display: flex;
+}
+
+.blindboxWrapper .productInfo {
+  min-width: fit-content;
+  margin: 0 auto;
+}
+
+.productInfo .imgAndDesc {
+  display: flex;
+  max-width: 300px;
+  min-height: fit-content;
+  overflow: hidden;
+}
+
+.imgAndDesc .smallimg {
+  width: 80px;
+  overflow: hidden;
+}
+
+.smallimg img {
+  width: 80px;
+  border: 1px solid black;
+}
+
+.smallimg img:hover {
+  border: 1px solid #FFA500;
+  cursor: pointer;
+}
+
+
+.mainimg {
+  margin-left: 4px;
+  width: 200px;
+  height: fit-content;
+  border: 2px solid black;
+  overflow: hidden;
+
+}
+
+.mainimg:nth-child(3) {
+  display: none;
+}
+
+.mainimg img {
+  width: 200px;
+}
+
+.desc {
+  min-width: 300px;
+  min-height: fit-content;
+  padding: 4px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.desc .title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  width: 90%;
+  padding: 4px;
+}
+
+
+.desc .detail {
+  font-size: 16px;
+  width: 90%;
+  padding: 4px;
+  margin-top: 8px;
+}
+
+.requiredPack {
+  width: 90%;
+  margin-top: 8px;
+  display: flex;
+
+}
+
+.requiredPack .pack {
+  min-width: fit-content;
+}
+
+.requiredPack .packSpec {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  /* background-color: lightgray; */
+  min-width: fit-content;
+  padding: 2px 0;
+  padding-left: 4px;
+}
+
+.requiredPack .packSpec .btn {
+  border: none;
+  min-width: 30px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #FFA500;
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 2px 4px;
+}
+
+.requiredPack .packSpec .btn i {
+  color: #FFA500;
+}
+
+.requiredPack .packSpec .btn:hover {
+  background-color: #FFA500;
+}
+
+.requiredPack .packSpec .btn i:hover {
+  color: white;
+}
+
+.requiredPack .packSpec .btn:hover {
+  cursor: pointer;
+  background-color: #FFA500;
+}
+
+
+.productInfo .priceAndBtn {}
+
+.priceAndBtn {
+  width: 90%;
+  margin-top: 8px;
+  text-align: end;
+}
+
+.priceAndBtn .price span {
+  display: inline-block;
+  min-width: 100px;
+}
+
+.priceAndBtn .amount .span {
+  display: inline-block;
+  min-width: 100px;
+}
+
+/* 按鈕設定 */
+.clickbox {
+  min-width: fit-content;
+  display: inline-block;
+  text-align: center;
+}
+
+.clickbox .number {
+  /* border: 1px solid black; */
+  display: inline-block;
+  width: 30px;
+
+}
+
+.clickbox .btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  min-width: 20px;
+  /* background-color: #257A91; */
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 2px 4px;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.clickbox .btn:hover {
+  cursor: pointer;
+}
+
+.clickbox .btn i:hover {
+  color: #FFA500;
+}
+
+.priceAndBtn .btn .addtocar,
+.priceAndBtn .btn .gotobuy {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  min-width: 20px;
+  /* background-color: #257A91; */
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 2px 4px;
+  font-size: 16px;
+  border: 2px solid #FFA500;
+  padding: 2px 4px;
+  color: #FFA500;
+}
+
+.priceAndBtn .btn .addtocar:hover,
+.priceAndBtn .btn .gotobuy:hover {
+  cursor: pointer;
+  background: #FFA500;
+  color: white;
+}
+
+/* otherInfo tab  */
+
+.otherInfo {
+  width: 80%;
+}
+
+
+.otherInfo .tab {
+  /* border: 1px solid darkcyan; */
+
+  font-size: 0;
+}
+
+.tab button.active {
+  color: red;
+}
+
+.otherInfo .tab .tablinks {
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: gray;
+  width: calc(100% / 3);
+  text-align: center;
+  border-bottom: 3px solid gray;
+  font-size: 20px;
+  min-height: fit-content;
+  font-weight: bold;
+  min-height: fit-content;
+}
+
+.otherInfo .tab .tablinks:hover {
+  cursor: pointer;
+  color: #257A91;
+  border-bottom: 3px solid#257A91;
+
+}
+
+div.otherInfo div.tab button.tablinks.active {
+  border-bottom: 3px solid#257A91;
+  color: #257A91;
+}
+
+.tabcontent {
+  min-height: 200px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.tabcontent:nth-child(3),
+.tabcontent:nth-child(4) {
+  display: none;
+}
+
+.tabcontent p {
+  font-size: 20px;
+  padding-top: 20px;
+  color: #257A91;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  /*  product section */
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blindboxWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

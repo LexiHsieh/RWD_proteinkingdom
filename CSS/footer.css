@@ -1,0 +1,95 @@
+.footer {
+  /* border: 1px solid red; */
+  padding: 20px 60px;
+  background-color: #257A91;
+  color: white;
+  min-width: fit-content;
+}
+
+.footerOne {
+  display: grid;
+}
+
+.aboutus {
+  grid-area: 1/1/2/2;
+}
+
+.question {
+  grid-area: 1/2/2/3;
+}
+
+.contactus {
+  grid-area: 1/3/2/4;
+}
+
+.copyRight {
+  grid-area: 2/1/3/4;
+
+}
+
+.footerOne .box {
+  margin: 20px 0;
+  min-width: 200px;
+
+}
+
+.box .title {
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+.content a {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.contactus .content a:hover {
+  color: white;
+  font-weight: 500;
+}
+
+
+
+.footerOne .copyRight {
+  min-width: 200px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footerTwo {
+  min-width: 200px;
+  text-align: center;
+  font-size: 12PX;
+}
+
+@media screen and (max-width:768px) {
+  .footer {
+    min-width: 300px;
+  }
+
+  .footerOne {
+
+    display: grid;
+  }
+
+  .aboutus {
+    grid-area: 1/1/2/2;
+  }
+
+  .question {
+    grid-area: 2/1/3/2;
+  }
+
+  .contactus {
+    grid-area: 3/1/4/2;
+  }
+
+  .copyRight {
+    grid-area: 4/1/5/2;
+
+  }
+
+}

@@ -1,0 +1,353 @@
+.shoppingcarWrapper {
+  margin: 40px auto;
+  border: 1px solid black;
+}
+
+
+.shoppingcarWrapper .progressBar {
+  margin-top: 20px;
+  display: flex;
+  direction: row;
+  max-width: fit-content;
+  font-size: 0;
+}
+
+.progressBar .status {
+  border-bottom: 3px solid gray;
+  color: gray;
+  min-height: fit-content;
+  width: 120px;
+  left: 28px;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px 16px;
+  margin: 0 20px;
+}
+
+.progressBar .status:first-child {
+  border-bottom: 3px solid #257A91;
+  background-color: white;
+  color: #257A91;
+  font-weight: bold;
+}
+
+/*  */
+.shoppingcarWrapper .product {
+  margin-top: 40px;
+  min-width: 350px;
+}
+
+/* 商品資訊header */
+.productHeader {
+  max-width: 80%;
+  background-color: lightgray;
+  min-height: 40px;
+  border-radius: 8px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.productHeader .productInfo {
+  grid-area: 1/1/2/3;
+  padding: 0px 8px;
+}
+
+
+.productHeader .price {
+  grid-area: 1/5/2/6;
+  padding: 0px 8px;
+}
+
+.productHeader .amount {
+  grid-area: 1/6/2/7;
+  padding: 0px 8px;
+}
+
+.product .subtotal {
+  grid-area: 1/7/2/8;
+  padding: 0px 8px;
+  padding: 0px 8px;
+}
+
+/* 商品資訊 */
+.product .productBody {
+  max-width: 80%;
+  margin-top: 10px;
+}
+
+.productBody .subtitle {
+  min-height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 20px;
+}
+
+.subtitle .name {
+  grid-area: 1/1/2/4;
+  padding: 0px 8px;
+}
+
+
+.productBody .addtofavorite {
+  grid-area: 1/6/2/7;
+  padding: 0px 8px;
+}
+
+.productBody .delete {
+  grid-area: 1/7/2/8;
+  padding: 0px 8px;
+}
+
+/* 收藏跟放棄 style跟 hover效果 */
+.productBody .addtofavorite,
+.productBody .delete {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.productBody .addtofavorite:hover,
+.productBody .delete:hover {
+  font-weight: bold;
+  color: #FFA500;
+}
+
+/* 商品的資訊格式 */
+.productItem {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 5px auto;
+  padding: 0 20px;
+}
+
+.productItem .img {
+  max-width: 120px;
+  overflow: hidden;
+  grid-area: 1/1/2/3;
+  padding: 0px 8px;
+}
+
+.productItem .img img {
+  width: 100px;
+}
+
+.productItem .desc {
+  grid-area: 1/3/2/5;
+  padding: 0px 8px;
+}
+
+
+.productItem .price {
+  grid-area: 1/5/2/6;
+  padding: 0px 8px;
+}
+
+.productItem .amount {
+  grid-area: 1/6/2/7;
+  padding: 0px 8px;
+}
+
+.productItem .subtotal {
+  grid-area: 1/7/2/8;
+  padding: 0px 8px;
+}
+
+/* 設定線條 */
+.productBody .subtitle {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.productItem {
+  border-bottom: 1px solid lightgray;
+}
+
+.productItem:last-child {
+  border-bottom: 2px solid black;
+}
+
+.shoppingcarWrapper .listAndMore {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+/*訂單資料 */
+.listAndMore .orderList,
+.listAndMore .buyMore {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.listAndMore .buyMore {
+  width: fit-content;
+}
+
+.orderList .orderName,
+.buyMore .buyMoreName {
+  min-height: 32px;
+  background-color: lightgray;
+  border-radius: 8px;
+  line-height: 32px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.orderList .row {
+  display: flex;
+  min-height: 20px;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.orderList .row:last-child {
+  border-top: 2px solid black;
+}
+
+.orderList .row .left {
+  width: 70%;
+}
+
+/* 加購商品*/
+.buyMore .cardContainer {
+  display: flex;
+}
+
+.buyMore .cardBox {
+  max-width: 200px;
+  padding: 8px 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cardBox .img {
+  width: 180px;
+  height: 104px;
+  overflow: hidden;
+}
+
+.cardBox .img img {
+  width: 180px;
+}
+
+.cardBox .name,
+.cardBox .price {
+  margin-top: 4px;
+}
+
+.cardBox .btn {
+  margin-top: 4px;
+  border: 1px solid #FFA500;
+  background-color: transparent;
+  padding: 0 4px;
+  border-radius: 4px;
+  color: #FFA500;
+}
+
+.cardBox .btn:hover {
+  cursor: pointer;
+  background-color: #FFA500;
+  color: white;
+  font-size: 14px;
+}
+
+.shoppingcarWrapper .btnBox {
+  min-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.shoppingcarWrapper .btnBox .back,
+.shoppingcarWrapper .btnBox .gotopay {
+  border: 2px solid #FFA500;
+  color: #FFA500;
+  font-size: 16px;
+  margin: 0 20px;
+  min-width: 100px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: bold;
+  outline: 0;
+}
+
+.shoppingcarWrapper .btnBox .back:hover,
+.shoppingcarWrapper .btnBox .gotopay:hover {
+  cursor: pointer;
+  background-color: #FFA500;
+  color: white;
+}
+
+@media screen and (max-width:992px) {
+  .buyMore .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    align-self: start;
+    align-items: start;
+
+  }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+  .product .productHeader {
+    padding: 0;
+  }
+
+  .productBody .subtitle {
+    padding: 0;
+  }
+
+  .product .productItem {
+    padding: 0;
+  }
+
+
+  .shoppingcarWrapper .listAndMore {
+    flex-direction: column;
+  }
+
+  .listAndMore .buyMore {
+    margin-top: 40px;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+  .buyMore .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+  }
+
+  .productItem {
+    font-size: 14px;
+  }
+
+  .productItem .img {
+    max-width: 80px;
+    overflow: hidden;
+    grid-area: 1/1/2/3;
+    padding: 0px 8px;
+  }
+
+  .productItem .img img {
+    width: 80px;
+  }
+}

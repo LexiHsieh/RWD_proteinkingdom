@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFA500;
+  font-weight: bold;
+}
+
+
+
+/* breadcrumb */
+
+.breadcrumb {
+  background-color: lightgray;
+  padding: 2px;
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.breadcrumb a {
+  border-right: 1px solid black;
+  padding: 0 5px;
+}
+
+.breadcrumb a:last-child {
+  text-decoration: underline;
+  border-right: 0px;
+}

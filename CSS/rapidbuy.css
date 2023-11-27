@@ -1,0 +1,94 @@
+.rapidbuyWrapper {
+  margin: 40px auto;
+}
+
+.rapidbuyWrapper .container {
+  /* border: 1px solid darkcyan; */
+  max-width: 900px;
+}
+
+.container .containerTitle {
+  background-color: #FFA500;
+  width: 60vw;
+  min-width: 240px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 64px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 20px;
+
+}
+
+.container .cardBox {
+  /* border: 2px solid salmon; */
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 20px auto;
+}
+
+.cardBox .card {
+  max-width: 200px;
+  display: flex;
+  flex-direction: flex-start;
+  padding: 4px;
+  position: relative;
+}
+
+.cardBox .card:hover {
+  animation: cardhover 1s infinite forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes cardhover {
+  50% {
+    border-bottom: 3px solid #FFA500;
+    border-top: 3px solid #FFA500;
+  }
+
+  100% {
+    border: 3px solid #FFA500;
+  }
+}
+
+
+
+
+
+.card a p {
+  font-weight: bold;
+}
+
+.card a .name {
+  font-size: 16px;
+  color: #257A91;
+
+}
+
+.card a .price {
+  font-size: 14px;
+}
+
+.card a img {
+  width: 160px;
+
+}
+
+.card a:hover {
+  color: black;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .rapidbuyWrapper .container {
+    max-width: 460px;
+  }
+
+  .container .cardBox {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

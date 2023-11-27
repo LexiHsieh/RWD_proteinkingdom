@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蛋白國度|Join and delight</title>
+  <link rel="stylesheet" href="./CSS/header.css">
+  <link rel="stylesheet" href="./CSS/shoppingcar.css">
+  <link rel="stylesheet" href="./CSS/footer.css">
+  <link rel="stylesheet" href="./CSS/all.css">
+  <link rel="stylesheet" href="./CSS/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="functionBar">
+      <div class="logo">
+        <a href="./index.html"><img class="logoimg" src="./img/logo_main.svg" alt="logo"></a>
+      </div>
+      <!-- 收尋欄 -->
+      <div class="searchBar">
+        <div class="container">
+          <input class="input" type="text" placeholder="請輸入商品名稱">
+          <div class="right"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
+        </div>
+      </div>
+      <div class="menuBtn"><i class="fa-solid fa-bars fa-xl"></i></div>
+      <div class="menuBtnClose"><i class="fa-solid fa-x fa-xl"></i></div>
+      <div class="favorite">
+        <a href="#">
+          <i class="fa-regular fa-heart fa-xl"></i>
+        </a>
+      </div>
+      <div class="shoppingCar"><a href="./shoppingcar.html"><i class="fa-solid fa-bag-shopping  fa-xl"></i></a></div>
+      <div class="member"><a href="#">
+          <i class="fa-regular fa-user fa-xl"></i>
+        </a></div>
+    </div>
+    <div class="nav">
+      <div class="menu"><a href="./index.html">最新消息</a></div>
+      <div class="menu"><a href="./rapidbuy.html">快速選購</a></div>
+      <div class="menu"><a href="./index.html">所有商品</a></div>
+      <div class="menu"><a href="#">產品比較</a></div>
+      <div class="menu"><a href="#">生活日誌</a></div>
+      <div class="menu"><a href="#">常見問題</a></div>
+      <div class="menu"><a href="./aboutus.html">關於我們</a></div>
+    </div>
+  </header>
+  <!-- breadcrumb -->
+  <div class="breadcrumb">
+    <a href="./index.html">首頁</a>
+    <a href="./shoppingcar.html">購物車</a>
+  </div>
+  <!-- shoppingcar wrapper -->
+  <div class="shoppingcarWrapper">
+    <div class="progressBar">
+      <div class="status">step1:<br>購物車</div>
+      <div class="status">step2:<br>填寫資料</div>
+      <div class="status">step3:<br>訂單確認</div>
+    </div>
+
+    <div class="product">
+      <div class="productHeader">
+        <div class="productInfo">商品資訊</div>
+        <div class="price">單價</div>
+        <div class="amount">數量</div>
+        <div class="subtotal">小計</div>
+      </div>
+      <div class="productBody">
+        <div class="subtitle">
+          <div class="name">[盲盒購買] 盲盒購買-綜合口味</div>
+          <div class="addtofavorite">加入追蹤</div>
+          <div class="delete">忍痛放棄</div>
+
+        </div>
+        <!-- product1 -->
+        <div class="productItem">
+          <div class="img">
+            <img src="./img/blindbox.svg" alt="blindbox">
+          </div>
+          <div class="desc">
+            產品規格: S 10個口味/ 20 包
+          </div>
+          <div class="price">NT$ 999</div>
+          <div class="amount">1</div>
+          <div class="subtotal">NT$ 999</div>
+        </div>
+        <!-- product2 -->
+        <div class="productItem">
+          <div class="img">
+            <img src="./img/blindbox.svg" alt="blindbox">
+          </div>
+          <div class="desc">
+            產品規格: S 10個口味/ 20 包
+          </div>
+          <div class="price">NT$ 999</div>
+          <div class="amount">1</div>
+          <div class="subtotal">NT$ 999</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="listAndMore">
+      <div class="orderList">
+        <div class="orderName">
+          訂單資料
+        </div>
+        <div class="row">
+          <div class="left">商品金額: </div>
+          <div class="right">NT$ 1998</div>
+        </div>
+        <div class="row">
+          <div class="left">運費 </div>
+          <div class="right">NT$ 100</div>
+        </div>
+        <div class="row">
+          <div class="left">總金額: </div>
+          <div class="right">NT$ 2098</div>
+        </div>
+
+      </div>
+      <div class="buyMore">
+        <div class="buyMoreName">加購商品</div>
+        <div class="cardContainer">
+          <div class="cardBox">
+            <div class="img"><img src="./img/blindbox/blindbox_smallimg.png"></div>
+            <div class="name">口味-紅茶拿鐵</div>
+            <div class="price">NT$ 49</div>
+            <button class="btn">加入購物車</button>
+          </div>
+          <div class="cardBox">
+            <div class="img"><img src="./img/blindbox/blindbox_smallimg.png"></div>
+            <div class="name">口味-紅茶拿鐵</div>
+            <div class="price">NT$ 49</div>
+            <button class="btn">加入購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- button -->
+    <div class="btnBox">
+      <button class="back" onclick="back()">想再逛逛</button>
+      <button class="gotopay" onclick="pay()">去結帳</button>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <hr>
+      <div class="footerOne">
+
+        <div class="box aboutus">
+          <div class="title">關於我們</div>
+          <div class="content">
+            <a href="#">品牌故事</a>
+            <a href="#">人才招募</a>
+          </div>
+        </div>
+
+
+        <div class="box question">
+          <div class="title">常見問題</div>
+          <div class="content">
+            <a href="#">運送方式</a>
+            <a href="#">付款方式</a>
+            <a href="#">服務條款</a>
+            <a href="#">隱私權政策</a>
+          </div>
+        </div>
+        <div class="box contactus">
+          <div class="title" disabled>聯絡我們</div>
+          <div class="content">
+            <a>電話: 00-1234567</a>
+            <a>時間: 周一到週五 08:00 ~ 17:00</a>
+            <a>地址: 台北市中山區復興路1234號</a>
+          </div>
+        </div>
+        <div class="copyRight">蛋白國度 ProteinKingdom | © 2023 . All Rights Reserved</div>
+      </div>
+      <div class="footerTwo">
+        本網站為緯育TibaMe【第87期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。
+      </div>
+
+    </footer>
+
+
+    <!-- <script src="./js/blindbox.js"></script> -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script>
+      function back() {
+        alert("再看一下嗎?");
+        window.location.href = "./rapidbuy.html";
+
+      }
+      function pay() {
+        alert("請先登入會員");
+      }
+    </script>
+</body>
+
+</html>
